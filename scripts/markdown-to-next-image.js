@@ -54,6 +54,6 @@ async function getImageSizes(dir) {
   });
 }
 
-getImageSizes('data/blog')
-  .then(() => console.log('Done!'))
-  .catch((e) => console.error(e));
+// getImageSizes('data/blog')
+//   .then(() => console.log('Done!'))
+//   .catch((e) => console.error(e));

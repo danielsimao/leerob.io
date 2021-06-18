@@ -48,6 +48,15 @@ html {
   }
 }
 
+.prose p {
+  margin-top: 0.3em !important;
+  margin-bottom: 0.3em !important;
+}
+
+.prose strong {
+  font-weight: bolder;
+}
+
 .prose .anchor {
   @apply absolute invisible;
 
@@ -82,12 +91,6 @@ html {
 .prose img {
   /* Don't apply styles to next/image */
   @apply m-0;
-}
-
-.prose > :first-child {
-  /* Override removing top margin, causing layout shift */
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
 }
 
 .token.comment,
@@ -199,4 +202,17 @@ input[type='email'] {
 table {
   display: block;
   overflow-y: scroll;
+}
+
+[data-reach-dialog-overlay] {
+  z-index: 10;
+}
+
+[data-reach-dialog-content] {
+  @apply border border-gray-200 bg-white dark:bg-black dark:border-gray-800 rounded;
+  padding: 0 !important;
+}
+
+[data-reach-dialog-content] .search-list {
+  -webkit-overflow-scrolling: touch;
 }

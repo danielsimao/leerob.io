@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import NextLink from 'next/link';
 
 import Footer from '@/components/Footer';
 
@@ -81,22 +80,6 @@ export default function Container(props) {
             </svg>
           )}
         </button>
-        <div>
-          <NextLink href="/dashboard">
-            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">
-              Dashboard
-            </a>
-          </NextLink>
-          <NextLink href="/blog">
-            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">Blog</a>
-          </NextLink>
-          <NextLink href="/about">
-            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">About</a>
-          </NextLink>
-          <NextLink href="/">
-            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">Home</a>
-          </NextLink>
-        </div>
       </nav>
       <main
         id="skip"
